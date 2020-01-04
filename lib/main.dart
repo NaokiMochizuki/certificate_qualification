@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'screens/top.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(CertificateQualificationApp());
 
-class MyApp extends StatelessWidget {
+class CertificateQualificationApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+
+      theme: ThemeData.light(),
+      initialRoute: Top.id,
+      routes: {
+        Top.id: (context) => Top(),
+      }
+    );
   }
 }
