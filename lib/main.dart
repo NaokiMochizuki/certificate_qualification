@@ -1,7 +1,9 @@
 import 'package:certicicatie_qualification/screens/select_category.dart';
+import 'package:certicicatie_qualification/screens/select_term.dart';
 import 'package:certicicatie_qualification/screens/setting.dart';
 import 'package:certicicatie_qualification/screens/study_record.dart';
 import 'package:certicicatie_qualification/screens/home.dart';
+import 'package:certicicatie_qualification/screens/select_question_type.dart';
 import 'package:flutter/material.dart';
 import 'screens/top.dart';
 
@@ -19,6 +21,8 @@ class CertificateQualificationApp extends StatelessWidget {
         SelectCategory.id: (context) => SelectCategory(),
         StudyRecord.id: (context) => StudyRecord(),
         Setting.id: (context) => Setting(),
+        SelectQuestionType.id: (context) => SelectQuestionType(),
+        SelectTerm.id: (context) => SelectTerm(),
       }
     );
   }

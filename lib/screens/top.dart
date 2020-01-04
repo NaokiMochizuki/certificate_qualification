@@ -20,7 +20,7 @@ class _TopState extends State<Top> with SingleTickerProviderStateMixin {
   static const _footerIcons = [
     Icon(Icons.home),
     Icon(Icons.mode_edit),
-    Icon(Icons.show_chart),
+    Icon(Icons.equalizer),
     Icon(Icons.settings)
   ];
 
@@ -79,8 +79,7 @@ class _TopState extends State<Top> with SingleTickerProviderStateMixin {
         currentIndex: _selectedIndex,
         onTap: (int index){
           setState((){
-            _pageController.animateToPage(index,
-                duration: Duration(milliseconds: 300), curve: Curves.easeOut);
+            _pageController.animateToPage(index, duration: Duration(milliseconds: 300), curve: Curves.easeOut);
           });
         },
       ),
