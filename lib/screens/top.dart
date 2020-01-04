@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:certicicatie_qualification/common/footer.dart';
 
 class Top extends StatelessWidget {
   static String id = 'top';
@@ -12,6 +13,7 @@ class Top extends StatelessWidget {
           child: Center(child: Text('this is top page')),
         ),
       ),
+      bottomNavigationBar: Footer(),
     );
   }
 }
