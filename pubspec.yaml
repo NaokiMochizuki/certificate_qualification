@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^0.1.2
   provider: ^4.0.1 #stateの管理
+  http: ^0.12.0+2 #httpリクエスト
 
 dev_dependencies:
   flutter_test:
