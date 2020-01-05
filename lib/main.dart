@@ -1,4 +1,5 @@
 import 'package:certicicatie_qualification/models/provider_data.dart';
+import 'package:certicicatie_qualification/screens/question_confirm.dart';
 import 'package:certicicatie_qualification/screens/select_category.dart';
 import 'package:certicicatie_qualification/screens/select_term.dart';
 import 'package:certicicatie_qualification/screens/setting.dart';
@@ -27,6 +28,7 @@ class CertificateQualificationApp extends StatelessWidget {
           Setting.id: (context) => Setting(),
           SelectQuestionType.id: (context) => SelectQuestionType(),
           SelectTerm.id: (context) => SelectTerm(),
+          QuestionConfirm.id: (context) => QuestionConfirm(),
         }
       ),
     );

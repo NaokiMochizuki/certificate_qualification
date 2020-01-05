@@ -1,8 +1,13 @@
+import 'package:certicicatie_qualification/screens/question_confirm.dart';
 import 'package:certicicatie_qualification/screens/select_term.dart';
 import 'package:flutter/material.dart';
 
 class SelectQuestionType extends StatelessWidget {
   static const id = 'select_question_type';
+
+  void randomQuestionSelectedCallback(context){
+    Navigator.pushNamed(context, QuestionConfirm.id);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +19,7 @@ class SelectQuestionType extends StatelessWidget {
           Expanded(
             flex: 1,
             child: GestureDetector(
-              onTap: (){},
+              onTap: (){randomQuestionSelectedCallback(context);},
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[

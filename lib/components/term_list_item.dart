@@ -4,10 +4,9 @@ import 'package:provider/provider.dart';
 
 // ignore: must_be_immutable
 class TermListItem extends StatefulWidget {
-  bool selected;
   final int id;
   final String title;
-  TermListItem({this.title, this.id, this.selected});
+  TermListItem({this.title, this.id});
 
   @override
   _TermListItemState createState() => _TermListItemState();
@@ -17,7 +16,7 @@ class _TermListItemState extends State<TermListItem> {
 
   void onTappedCallback(int id) {
     // 選択,削除されたカテゴリのIDをプロバイダに伝える処理
-    if(Provider.of<ProviderData>(context, listen:false).isSelectedId(id)){
+    if(Provider.of<ProviderData>(context, listen: false).isSelectedId(id)){
       Provider.of<ProviderData>(context, listen: false).removeTermId(id);
     }else{
       Provider.of<ProviderData>(context, listen: false).addSelectedTermId(id);
